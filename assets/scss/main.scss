@@ -15,8 +15,8 @@ body {
     }
   }
   div#showcase {
-    display: flex;
-    justify-content: space-evenly;
+    @include evenflex;
+    position: absolute;
     width: 100%;
     margin-top: -40px;
     div.show-container {
@@ -26,6 +26,23 @@ body {
       background-color: $dark-peach;
       img.thumb {
         @include circle;
+      }
+    }
+  }
+  div#description {
+    @include evenflex;
+    background-color: $bright-peach;
+    padding-top: 12em;
+    div.row {
+      max-width: 970px;
+      text-align: center;
+      h2 {
+        @include titles;
+        font-size: $medium;
+        color: $main-color;
+      }
+      p {
+        @include paragraphs;
       }
     }
   }

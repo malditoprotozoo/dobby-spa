@@ -12,17 +12,25 @@
 }
 
 @mixin titles {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 @mixin paragraphs {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 0.4em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 0.9em;
 }
 
 @mixin circle {
   border-radius: 50%;
   overflow: hidden;
+}
+
+@mixin evenflex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: space-evenly;
 }

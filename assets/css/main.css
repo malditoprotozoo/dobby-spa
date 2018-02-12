@@ -19,7 +19,11 @@ body nav li a.active {
 
 body div#showcase {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   justify-content: space-evenly;
+  position: absolute;
   width: 100%;
   margin-top: -40px;
 }
@@ -37,12 +41,40 @@ body div#showcase div.show-container img.thumb {
   overflow: hidden;
 }
 
+body div#description {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: space-evenly;
+  background-color: #f7dda4;
+  padding-top: 12em;
+}
+
+body div#description div.row {
+  max-width: 970px;
+  text-align: center;
+}
+
+body div#description div.row h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #2f1f1f;
+}
+
+body div#description div.row p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 0.9em;
+}
+
 body footer {
   background-color: #2f1f1f;
 }
 
 body footer h2 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.3em;
