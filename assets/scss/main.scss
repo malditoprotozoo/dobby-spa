@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixin';
+
+body {
+  overflow-x: hidden;
+  nav {
+    background-color: $main-color;
+    li a {
+      @include mono;
+      text-transform: lowercase;
+      color: white;
+    }
+    li a.active {
+      color: $bright-peach;
+    }
+  }
+  div#showcase {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -40px;
+    div.show-container {
+      @include circle;
+      display: inline-flex;
+      padding: 0.5em;
+      background-color: $dark-peach;
+      img.thumb {
+        @include circle;
+      }
+    }
+  }
+  footer {
+    background-color: $main-color;
+    h2 {
+      @include titles;
+      font-size: $medium;
+      color: $bright-peach;
+    }
+    div.row {
+      @include flexcenter;
+    }
+  }
+}

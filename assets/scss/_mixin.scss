@@ -1,0 +1,28 @@
+@mixin flexcenter {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+}
+
+@mixin mono {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+}
+
+@mixin titles {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin paragraphs {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 0.4em;
+}
+
+@mixin circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
